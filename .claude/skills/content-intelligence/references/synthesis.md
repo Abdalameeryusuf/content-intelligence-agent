@@ -39,15 +39,23 @@ verified, cannot be refreshed, and rots invisibly.
 
 ## 3. Craft library
 
-Path: `synthesis/craft/<pattern-slug>.md`
+Path: `synthesis/craft/<group-slug>.md`
 
-Groups CRAFT insights into reusable patterns. Each pattern records: the structure,
-the instances (with IDs and performance figures at capture), conditions for working,
-conditions for failing, and whether it transfers to a technical-product audience.
+**Groups PATTERN and CRAFT-INSIGHT files by theme.** It does not restate them — it
+indexes them and reports what holds across the group.
 
-The performance figures are evidence, not endorsement — a pattern that performed once
-is not a validated pattern, and a high-view instance from a creator with a large
-existing audience says less about the pattern than about the audience.
+Since PATTERN files became a first-class type, the craft library's job narrowed: the
+per-pattern detail (instances, span, failure conditions) lives in
+`creators/<slug>/patterns/`, and the library reports what is true *across* patterns.
+
+Each entry cites the pattern or insight ID and its `generalization`. A library entry
+must never state something more strongly than the underlying file does — if every
+underlying pattern is `within-creator`, the library entry is too.
+
+**Performance is not endorsement.** Cite `performance_tier` spans to show a pattern is
+a habit rather than a response to a hit. Never cite view counts to argue a pattern
+works — see `schemas.md` §5. A high-view instance from a creator with a large existing
+audience says more about the audience than the pattern.
 
 ## 4. Current research
 
@@ -102,3 +110,14 @@ never patched in place.
 - **Do not adjudicate by follower count.** Evidence decides, and where there is no
   evidence, say there is none on either side.
 - **A creator being wrong is reportable.** Tracking someone is not endorsing them.
+- **Check `attribution.role` before crediting anyone.** A guest's claim on a tracked
+  creator's channel is the guest's. Synthesis that says "Kallaway believes X" when
+  `claimed_by` is a guest is a misattribution defect, not a wording slip.
+- **Check `commercial.status` before treating a recommendation as sincere.** A
+  recommendation inside `promotional` content is weak evidence of what the creator
+  actually thinks, and must be labeled when cited.
+- **Check `generalization` before generalizing.** A `within-creator` pattern supports
+  "this is how Kallaway works," never "this is how content works."
+- **Never let a synthesis claim outrun its sources.** If the underlying files say
+  `evidence_strength: none`, the synthesis says so too.
+- **An insight with `attribution.role: unknown` is not usable** until resolved.

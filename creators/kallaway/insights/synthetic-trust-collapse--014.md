@@ -1,18 +1,39 @@
 ---
 id: kallaway--synthetic-trust-collapse--014
+knowledge_type: INSIGHT
 creator: kallaway
-speaker: kallaway
 lane: CLAIM
 type: prediction
 topics: [trust, ai-tooling, platform-dynamics, creator-economy]
+
+attribution:
+  claimed_by: kallaway
+  role: self
+  published_by: kallaway
+  co_constructed_with: null
+
 confidence: high
+evidence_strength: none
 stance: strong
+
+commercial:
+  status: none
+  basis: null
+
 source:
   video_id: 3Lv9YMOAyEY
   title: "We've officially crossed the Uncanny Valley"
   duration: "0:55"
-  views_at_capture: "29K"
   timestamps: ["0:27", "0:36", "0:43", "0:50"]
+
+performance:
+  views_at_capture: "29K"
+  tier: mid
+  captured: 2026-09-10
+  interpretation: sampling-context-only
+  confounds:
+    - "The on-screen demo evidences the CAPABILITY, not the predicted use. Do not read it as support for the prediction."
+
 captured: 2026-09-10
 supersedes: null
 related: [kallaway--verdict-against-interest--007]

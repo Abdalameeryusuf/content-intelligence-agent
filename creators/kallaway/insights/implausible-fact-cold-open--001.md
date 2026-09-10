@@ -1,18 +1,36 @@
 ---
 id: kallaway--implausible-fact-cold-open--001
+knowledge_type: INSIGHT
 creator: kallaway
-speaker: kallaway
 lane: CRAFT
 type: hook
 topics: [hooks, compression]
+
+observed_in:
+  video_id: R1bn__sNAaM
+  stated_by_creator: false
+
 confidence: high
-stance: null
+evidence_strength: demonstrated
+
+commercial:
+  status: none
+  basis: null
+
 source:
   video_id: R1bn__sNAaM
   title: "Christopher Nolan wanted to drop a real bomb to film Oppenheimer"
   duration: "1:00"
-  views_at_capture: "8.6M"
   timestamps: ["0:00", "0:05"]
+
+performance:
+  views_at_capture: "8.6M"
+  tier: breakout
+  captured: 2026-09-10
+  interpretation: sampling-context-only
+  confounds:
+    - "Oppenheimer was a global cultural event at capture time. Subject matter and technique are confounded and cannot be separated."
+
 captured: 2026-09-10
 supersedes: null
 related: [kallaway--escalation-demotes-the-headline--002]

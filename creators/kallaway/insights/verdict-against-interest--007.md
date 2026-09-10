@@ -1,18 +1,36 @@
 ---
 id: kallaway--verdict-against-interest--007
+knowledge_type: INSIGHT
 creator: kallaway
-speaker: kallaway
 lane: CRAFT
 type: structure
 topics: [trust, formats, structure]
+
+observed_in:
+  video_id: 6dHBs08vdrg
+  stated_by_creator: false
+
 confidence: high
-stance: null
+evidence_strength: demonstrated
+
+commercial:
+  status: none
+  basis: "Creator explicitly declines to recommend the product and offers a free alternative; no promotional framing."
+
 source:
   video_id: 6dHBs08vdrg
   title: "I'm returning my Apple Vision Pro"
   duration: "10:18"
-  views_at_capture: "9.9K"
   timestamps: ["0:21", "0:40", "1:40", "7:33", "8:35"]
+
+performance:
+  views_at_capture: "9.9K"
+  tier: low
+  captured: 2026-09-10
+  interpretation: sampling-context-only
+  confounds:
+    - "Low tier for this catalog; long-form videos consistently underperform Shorts here regardless of content."
+
 captured: 2026-09-10
 supersedes: null
 related: [kallaway--comparison-anchor--008]
@@ -90,7 +108,11 @@ which currently exists as a constraint list. This insight suggests the refusals 
 *content* — the most trust-building content available pre-launch.
 
 [INFERENCE] A caution about the same creator: several videos in this pilot are
-commercial content in editorial form (see
-`kallaway--commercial-content-in-tutorial-form--009`). The trust this pattern builds is
-spent by those. Both patterns are his, and the tension between them is the genuinely
-instructive thing here.
+promotional content in editorial form (see
+`kallaway--promotional-framework-format--p002`). The trust this pattern builds is spent
+by those. Both are his, and the tension between them is the genuinely instructive thing
+here.
+
+[INFERENCE] Note the `commercial.basis` on this file. It records the *absence* of
+promotional framing — a declined recommendation and a free alternative — which is what
+makes `status: none` an assessment rather than a default.

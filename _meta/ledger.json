@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "note": "Machine-owned. Do not hand-edit. processed_videos is the idempotency key.",
+  "version": 2,
+  "note": "Machine-owned. Do not hand-edit. processed_videos is the idempotency key. Schema revision 2.",
   "runs": [
     {
       "date": "2026-09-10",
@@ -9,13 +9,11 @@
       "videos_attempted": 21,
       "videos_processed": 20,
       "videos_unavailable": 1,
-      "insights_created": 20,
+      "insights_created": 18,
       "credits_spent_estimate": 25,
       "note": "Schema-validation pilot. Selection spread across 4 catalog eras, 7 long-form formats, and a 3K-8.6M view range, deliberately including low performers. Catalog enumeration cost ~4 credits, transcripts ~21.",
-      "insights_breakdown": {
-        "attributed_to_single_video": 19,
-        "cross_video": 1
-      }
+      "patterns_created": 2,
+      "schema_revision": 2
     }
   ],
   "processed_videos": {
@@ -25,6 +23,10 @@
       "insights": 2,
       "lanes": [
         "CRAFT"
+      ],
+      "commercial_status": "none",
+      "contributes_to_patterns": [
+        "kallaway--mid-roll-rehook--p001"
       ]
     },
     "0uZ6GSHKW44": {
@@ -32,31 +34,45 @@
       "date": "2026-09-10",
       "insights": 0,
       "lanes": [],
-      "note": "Contributed a timestamp to mid-roll-rehook--003; no standalone insight"
+      "note": "Contributed a timestamp to mid-roll-rehook--003; no standalone insight",
+      "commercial_status": "none",
+      "contributes_to_patterns": [
+        "kallaway--mid-roll-rehook--p001"
+      ]
     },
     "cvR3mWP-4z0": {
       "creator": "kallaway",
       "date": "2026-09-10",
       "insights": 0,
       "lanes": [],
-      "note": "Contributed a timestamp to mid-roll-rehook--003"
+      "note": "Contributed a timestamp to mid-roll-rehook--003",
+      "commercial_status": "none",
+      "contributes_to_patterns": [
+        "kallaway--mid-roll-rehook--p001"
+      ]
     },
     "zFcsXAEfKTE": {
       "creator": "kallaway",
       "date": "2026-09-10",
-      "insights": 1,
+      "insights": 0,
       "lanes": [
         "CRAFT"
       ],
-      "commercial": true
+      "commercial_status": "promotional",
+      "contributes_to_patterns": [
+        "kallaway--promotional-framework-format--p002"
+      ]
     },
     "emdx7im23ao": {
       "creator": "kallaway",
       "date": "2026-09-10",
       "insights": 0,
       "lanes": [],
-      "commercial": true,
-      "note": "Folded into commercial-content-in-tutorial-form--009"
+      "note": "Folded into commercial-content-in-tutorial-form--009",
+      "commercial_status": "promotional",
+      "contributes_to_patterns": [
+        "kallaway--promotional-framework-format--p002"
+      ]
     },
     "3Lv9YMOAyEY": {
       "creator": "kallaway",
@@ -64,14 +80,18 @@
       "insights": 1,
       "lanes": [
         "CLAIM"
-      ]
+      ],
+      "commercial_status": "none",
+      "contributes_to_patterns": []
     },
     "7W5Mpwt8kKY": {
       "creator": "kallaway",
       "date": "2026-09-10",
       "insights": 0,
       "lanes": [],
-      "note": "Product-demo commentary; no durable insight"
+      "note": "Product-demo commentary; no durable insight",
+      "commercial_status": "none",
+      "contributes_to_patterns": []
     },
     "WDhcMbFFeVU": {
       "creator": "kallaway",
@@ -79,6 +99,10 @@
       "insights": 1,
       "lanes": [
         "CRAFT"
+      ],
+      "commercial_status": "none",
+      "contributes_to_patterns": [
+        "kallaway--mid-roll-rehook--p001"
       ]
     },
     "rjo5XUtVQSE": {
@@ -87,7 +111,9 @@
       "insights": 1,
       "lanes": [
         "CRAFT"
-      ]
+      ],
+      "commercial_status": "none",
+      "contributes_to_patterns": []
     },
     "GacM6G1owfA": {
       "creator": "kallaway",
@@ -95,7 +121,9 @@
       "insights": 1,
       "lanes": [
         "CLAIM"
-      ]
+      ],
+      "commercial_status": "none",
+      "contributes_to_patterns": []
     },
     "o_Jq2DKL_W8": {
       "creator": "kallaway",
@@ -104,21 +132,31 @@
       "lanes": [
         "CRAFT",
         "CASE"
-      ]
+      ],
+      "commercial_status": "none",
+      "contributes_to_patterns": []
     },
     "FrkRFGLVmSc": {
       "creator": "kallaway",
       "date": "2026-09-10",
       "insights": 0,
       "lanes": [],
-      "note": "Tool recommendation; contributed disclosure evidence to commercial-content-in-tutorial-form--009"
+      "note": "Tool recommendation; contributed disclosure evidence to commercial-content-in-tutorial-form--009",
+      "commercial_status": "disclosed-non-sponsorship",
+      "contributes_to_patterns": [
+        "kallaway--promotional-framework-format--p002"
+      ]
     },
     "o4AUMhBoWgc": {
       "creator": "kallaway",
       "date": "2026-09-10",
       "insights": 0,
       "lanes": [],
-      "note": "Contributed a timestamp to mid-roll-rehook--003"
+      "note": "Contributed a timestamp to mid-roll-rehook--003",
+      "commercial_status": "none",
+      "contributes_to_patterns": [
+        "kallaway--mid-roll-rehook--p001"
+      ]
     },
     "xyEQuqv1TLw": {
       "creator": "kallaway",
@@ -126,7 +164,9 @@
       "insights": 1,
       "lanes": [
         "CRAFT"
-      ]
+      ],
+      "commercial_status": "none",
+      "contributes_to_patterns": []
     },
     "s7KgTX6psWU": {
       "creator": "kallaway",
@@ -134,7 +174,9 @@
       "insights": 1,
       "lanes": [
         "CRAFT"
-      ]
+      ],
+      "commercial_status": "none",
+      "contributes_to_patterns": []
     },
     "33RYYHqU0OQ": {
       "creator": "kallaway",
@@ -144,7 +186,9 @@
         "CLAIM",
         "CASE"
       ],
-      "note": "Densest video in the pilot"
+      "note": "Densest video in the pilot",
+      "commercial_status": "none",
+      "contributes_to_patterns": []
     },
     "6dHBs08vdrg": {
       "creator": "kallaway",
@@ -152,15 +196,20 @@
       "insights": 1,
       "lanes": [
         "CRAFT"
-      ]
+      ],
+      "commercial_status": "none",
+      "contributes_to_patterns": []
     },
     "1NOFMGsxBdc": {
       "creator": "kallaway",
       "date": "2026-09-10",
       "insights": 0,
       "lanes": [],
-      "commercial": true,
-      "note": "Folded into commercial-content-in-tutorial-form--009"
+      "note": "Folded into commercial-content-in-tutorial-form--009",
+      "commercial_status": "promotional",
+      "contributes_to_patterns": [
+        "kallaway--promotional-framework-format--p002"
+      ]
     },
     "Tw64JwEViic": {
       "creator": "kallaway",
@@ -169,7 +218,9 @@
       "lanes": [
         "CLAIM"
       ],
-      "has_guest": true
+      "has_guest": true,
+      "commercial_status": "none",
+      "contributes_to_patterns": []
     },
     "m88OV10vRLA": {
       "creator": "kallaway",
@@ -178,7 +229,9 @@
       "lanes": [
         "CLAIM"
       ],
-      "has_guest": true
+      "has_guest": true,
+      "commercial_status": "none",
+      "contributes_to_patterns": []
     }
   },
   "unavailable_videos": {
@@ -190,13 +243,10 @@
       "note": "Do not retry. Replaced in the pilot sample by cvR3mWP-4z0 (same era, same tier, different subject)."
     }
   },
-  "cross_video_insights": {
-    "kallaway--mid-roll-rehook--003": {
-      "creator": "kallaway",
-      "date": "2026-09-10",
-      "lanes": [
-        "CRAFT"
-      ],
+  "patterns": {
+    "kallaway--mid-roll-rehook--p001": {
+      "instance_count": 7,
+      "videos": 5,
       "derived_from": [
         "R1bn__sNAaM",
         "0uZ6GSHKW44",
@@ -204,7 +254,20 @@
         "WDhcMbFFeVU",
         "o4AUMhBoWgc"
       ],
-      "note": "Not attributable to a single video. See decisions.md defect 3."
+      "generalization": "within-creator",
+      "supersedes": "kallaway--mid-roll-rehook--003"
+    },
+    "kallaway--promotional-framework-format--p002": {
+      "instance_count": 4,
+      "videos": 4,
+      "derived_from": [
+        "zFcsXAEfKTE",
+        "emdx7im23ao",
+        "1NOFMGsxBdc",
+        "FrkRFGLVmSc"
+      ],
+      "generalization": "within-creator",
+      "supersedes": "kallaway--commercial-content-in-tutorial-form--009"
     }
   }
 }

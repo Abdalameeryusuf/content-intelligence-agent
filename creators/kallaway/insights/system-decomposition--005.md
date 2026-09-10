@@ -1,21 +1,39 @@
 ---
 id: kallaway--system-decomposition--005
+knowledge_type: INSIGHT
 creator: kallaway
-speaker: kallaway
 lane: CRAFT
 type: format
 topics: [structure, storytelling, compression]
+
+observed_in:
+  video_id: o_Jq2DKL_W8
+  stated_by_creator: false
+
 confidence: high
-stance: null
+evidence_strength: demonstrated
+
+commercial:
+  status: none
+  basis: null
+
 source:
   video_id: o_Jq2DKL_W8
   title: "Reese Witherspoon sold her production company for $900M"
   duration: "1:00"
-  views_at_capture: "207K"
   timestamps: ["0:00", "0:10", "0:17", "0:32", "0:52"]
+
+performance:
+  views_at_capture: "207K"
+  tier: high
+  captured: 2026-09-10
+  interpretation: sampling-context-only
+  confounds:
+    - "A widely recognised subject and a $900M figure; subject and technique are confounded."
+
 captured: 2026-09-10
 supersedes: null
-related: [kallaway--near-death-reversal--004, reese-witherspoon-book-club-loop--001]
+related: [kallaway--near-death-reversal--004, kallaway--reese-witherspoon-book-club-loop--case-002]
 ---
 
 ## The pattern

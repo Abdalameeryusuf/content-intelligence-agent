@@ -1,18 +1,36 @@
 ---
 id: kallaway--artifact-teardown--006
+knowledge_type: INSIGHT
 creator: kallaway
-speaker: kallaway
 lane: CRAFT
 type: format
 topics: [formats, structure, storytelling, creative-process]
+
+observed_in:
+  video_id: rjo5XUtVQSE
+  stated_by_creator: false
+
 confidence: high
-stance: null
+evidence_strength: demonstrated
+
+commercial:
+  status: none
+  basis: null
+
 source:
   video_id: rjo5XUtVQSE
   title: "JK Rowling's genius storytelling system for Harry Potter"
   duration: "0:52"
-  views_at_capture: "29K"
   timestamps: ["0:00", "0:12", "0:23", "0:38", "0:48"]
+
+performance:
+  views_at_capture: "29K"
+  tier: mid
+  captured: 2026-09-10
+  interpretation: sampling-context-only
+  confounds:
+    - "Mid-tier performance. Deliberately sampled below the breakout tier; see decisions.md."
+
 captured: 2026-09-10
 supersedes: null
 related: []

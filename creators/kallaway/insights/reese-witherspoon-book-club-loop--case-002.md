@@ -1,18 +1,39 @@
 ---
 id: kallaway--reese-witherspoon-book-club-loop--case-002
+knowledge_type: INSIGHT
 creator: kallaway
-speaker: kallaway
 lane: CASE
 type: case-study
 topics: [distribution, audience-building, value-creation, product-launch]
+
+attribution:
+  claimed_by: reese-witherspoon
+  role: third-party-reported
+  published_by: kallaway
+  co_constructed_with: null
+
 confidence: medium
+evidence_strength: none
 stance: null
+
+commercial:
+  status: none
+  basis: null
+
 source:
   video_id: o_Jq2DKL_W8
   title: "Reese Witherspoon sold her production company for $900M"
   duration: "1:00"
-  views_at_capture: "207K"
   timestamps: ["0:10", "0:17", "0:29", "0:52"]
+
+performance:
+  views_at_capture: "207K"
+  tier: high
+  captured: 2026-09-10
+  interpretation: sampling-context-only
+  confounds:
+    - "All figures reported in a 60-second video with no citations; unverified in this knowledge base."
+
 captured: 2026-09-10
 supersedes: null
 related: [kallaway--system-decomposition--005, kallaway--distribution-before-product--001]

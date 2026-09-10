@@ -1,19 +1,39 @@
 ---
 id: kallaway--taste-over-skill--011
+knowledge_type: INSIGHT
 creator: kallaway
-speaker: daniel-ek
-speaker_role: guest
 lane: CLAIM
 type: prediction
 topics: [ai-tooling, creative-process, creator-economy, positioning]
+
+attribution:
+  claimed_by: daniel-ek
+  role: host-framed-guest-endorsed
+  published_by: kallaway
+  co_constructed_with: kallaway
+
 confidence: high
+evidence_strength: anecdote
 stance: moderate
+
+commercial:
+  status: none
+  basis: null
+
 source:
   video_id: Tw64JwEViic
   title: "Daniel Ek on Creating Spotify, Joe Rogan, AI in Music, Creators, New Products"
   duration: "17:35"
-  views_at_capture: "3.1K"
   timestamps: ["~9:30", "~10:15"]
+
+performance:
+  views_at_capture: "3.1K"
+  tier: low
+  captured: 2026-09-10
+  interpretation: sampling-context-only
+  confounds:
+    - "Low view count reflects the video's recency and the channel's long-form tier, not reception of the argument."
+
 captured: 2026-09-10
 supersedes: null
 related: [kallaway--one-ai-vs-many--012]
@@ -27,14 +47,17 @@ Kallaway proposes the frame:
 
 > "I think we're going from a skill moat to a taste moat era. Skill moat — you don't
 > really need the skills of which buttons to push, but you do need the taste. Taste will
-> become that much more important, to know what's good and what isn't."
+> become that much more important, to know what's good and what isn't." — ~9:30
 
 Ek accepts and extends it:
 
 > "The bar, because of AI, there's going to be a lot of people that are going to be able
 > to make music for instance that sound pretty good. So how do you then go from doing
 > that to standing out? I think you have to truly showcase yourself in a very different
-> way, by adding these kind of unique things — what you call taste."
+> way, by adding these kind of unique things — what you call taste." — ~10:15
+
+**Timestamps are approximate** — this transcript was fetched without timestamp markers
+and positions are estimated from transcript order.
 
 ## Their reasoning
 
@@ -78,8 +101,11 @@ judgment rather than execution, then the *reasoning* behind his product decision
 content, not the product. The v0 export decision is an act of judgment, publicly
 documented, and that is the asset this claim would predict matters.
 
-[INFERENCE] **Schema finding — this insight required a field the schema did not have.**
-The claim is made by a guest on the tracked creator's channel. Without `speaker`, a
-future synthesis pass would attribute Ek's position to Kallaway, which is exactly the
-misattribution SKILL.md §2 forbids. `speaker` and `speaker_role` were added here and are
-flagged for the post-pilot schema review.
+[INFERENCE] **Attribution note.** Kallaway proposed the framing and Ek accepted and
+extended it, so this carries `role: host-framed-guest-endorsed` with
+`co_constructed_with: kallaway`. Neither is credited alone. Reporting this as
+"Kallaway believes taste is the moat" or as "Ek believes it" would both be wrong — the
+first is misattribution, the second drops the fact that the host supplied the frame.
+
+This case is why `attribution` became mandatory in schema revision 2; during the pilot
+it was handled ad hoc.

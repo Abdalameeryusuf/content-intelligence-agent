@@ -1,18 +1,39 @@
 ---
 id: kallaway--owned-vs-rented-audience--002
+knowledge_type: INSIGHT
 creator: kallaway
-speaker: kallaway
 lane: CLAIM
 type: framework
 topics: [distribution, audience-building, platform-dynamics]
+
+attribution:
+  claimed_by: kallaway
+  role: self
+  published_by: kallaway
+  co_constructed_with: null
+
 confidence: high
+evidence_strength: none
 stance: strong
+
+commercial:
+  status: none
+  basis: null
+
 source:
   video_id: 33RYYHqU0OQ
   title: "I'm building a personal holding company"
   duration: "13:37"
-  views_at_capture: "3.3K"
   timestamps: ["8:25", "8:39", "8:48"]
+
+performance:
+  views_at_capture: "3.3K"
+  tier: low
+  captured: 2026-09-10
+  interpretation: sampling-context-only
+  confounds:
+    - "Older video; view count reflects channel size at the time, not now"
+
 captured: 2026-09-10
 supersedes: null
 related: [kallaway--algorithmic-cold-start--004]

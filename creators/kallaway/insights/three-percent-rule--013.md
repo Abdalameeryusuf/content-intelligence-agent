@@ -1,19 +1,39 @@
 ---
 id: kallaway--three-percent-rule--013
+knowledge_type: INSIGHT
 creator: kallaway
-speaker: kallaway
-speaker_role: reporting-third-party
 lane: CLAIM
 type: framework
 topics: [positioning, creative-process, titles-and-framing]
+
+attribution:
+  claimed_by: virgil-abloh
+  role: third-party-reported
+  published_by: kallaway
+  co_constructed_with: null
+
 confidence: high
+evidence_strength: anecdote
 stance: moderate
+
+commercial:
+  status: none
+  basis: null
+
 source:
   video_id: GacM6G1owfA
   title: "The simple genius of Virgil Abloh's 3% rule"
   duration: "0:49"
-  views_at_capture: "5.8K"
   timestamps: ["0:06", "0:22", "0:34", "0:44"]
+
+performance:
+  views_at_capture: "5.8K"
+  tier: low
+  captured: 2026-09-10
+  interpretation: sampling-context-only
+  confounds:
+    - "No primary Abloh source cited in the video; the framework is unverified as reported."
+
 captured: 2026-09-10
 supersedes: null
 related: [kallaway--comparison-anchor--008]
@@ -79,8 +99,10 @@ mistake the export data exposed. Applied to how the product is *explained*, it i
 not architecture. Filing it under `positioning` rather than `product-launch` reflects
 that, and a future synthesis pass should not let it drift.
 
-[INFERENCE] **Schema note:** third instance of an attribution problem. Here the claim
-belongs to a third party who is neither the tracked creator nor a guest — Kallaway is
-reporting it. `speaker_role: reporting-third-party` was used. The post-pilot review
-should settle a small controlled vocabulary for this field rather than inventing values
-per insight.
+[INFERENCE] **Attribution note.** `role: third-party-reported` — the framework is
+Abloh's, reported by Kallaway, and Abloh is not present. The claim belongs to Abloh *as
+reported*, and the report is unverified: the video cites no primary source, which is why
+`evidence_strength` is `anecdote` rather than anything stronger.
+
+During the pilot this case produced an invented role value. Schema revision 2 closes the
+vocabulary in `_meta/vocabularies.yaml` precisely to stop that.

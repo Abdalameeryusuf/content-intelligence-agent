@@ -1,19 +1,39 @@
 ---
 id: kallaway--one-ai-vs-many--012
+knowledge_type: INSIGHT
 creator: kallaway
-speaker: mark-zuckerberg
-speaker_role: guest
 lane: CLAIM
 type: opinion
 topics: [ai-products, ai-tooling, creator-economy]
+
+attribution:
+  claimed_by: mark-zuckerberg
+  role: guest
+  published_by: kallaway
+  co_constructed_with: null
+
 confidence: high
+evidence_strength: none
 stance: strong
+
+commercial:
+  status: none
+  basis: null
+
 source:
   video_id: m88OV10vRLA
   title: "Mark Zuckerberg on Creators, AI Studio, Neural Wristbands, Holographic Smart Glasses"
   duration: "39:40"
-  views_at_capture: "101K"
   timestamps: ["~2:00", "~28:00", "~29:30"]
+
+performance:
+  views_at_capture: "101K"
+  tier: high
+  captured: 2026-09-10
+  interpretation: sampling-context-only
+  confounds:
+    - "Views reflect the guest's prominence, not the channel's typical long-form reach."
+
 captured: 2026-09-10
 supersedes: null
 related: [kallaway--taste-over-skill--011]
@@ -27,17 +47,21 @@ related: [kallaway--taste-over-skill--011]
 > to interact with... our overall view is that this isn't the type of thing where there
 > should just be one. We think people want to interact with lots of different people and
 > businesses, and there need to be a lot of different AIs that get created to reflect
-> people's different interests."
+> people's different interests." — ~2:00
 
 And more sharply:
 
 > "It's not like there was one app on people's phones that people use. There's not one
 > creator that people want all their content from... there's not one business that
-> people want to buy everything from. People value diversity."
+> people want to buy everything from. People value diversity." — ~28:00
 
 > "I find it a pretty big turnoff when people in the tech industry kind of talk about
 > building this one true AI. It's almost as if they think they're creating God or
-> something, and that's not what we're doing."
+> something, and that's not what we're doing." — ~29:30
+
+**Timestamps are approximate.** This transcript was fetched without timestamp markers
+because of its length (39:40); positions are estimated from transcript order. Re-fetch
+with timestamps before quoting this video publicly.
 
 ## Their reasoning
 
@@ -77,7 +101,8 @@ use — "it's not like we're going to stop having a phone, it's just that it's g
 stay in your pocket more." That is a more careful and more testable claim than the main
 one, and it is the better of the two.
 
-[INFERENCE] Second instance of the guest-speaker schema gap — see
-`kallaway--taste-over-skill--011`. Two of twenty videos in this pilot are interviews, and
-both required `speaker`. At full backfill scale this would be a systematic
-misattribution risk.
+[INFERENCE] **Attribution note.** `role: guest` — this is Zuckerberg's claim, published
+by Kallaway. The tracked creator inherits nothing from it, and synthesis must never
+report it as Kallaway's position. Two of twenty pilot videos are interviews; at full
+backfill scale, unlabelled guest claims would be a systematic misattribution risk. This
+is why `attribution` is mandatory in schema revision 2.

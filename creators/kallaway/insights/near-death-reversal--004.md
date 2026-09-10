@@ -1,18 +1,36 @@
 ---
 id: kallaway--near-death-reversal--004
+knowledge_type: INSIGHT
 creator: kallaway
-speaker: kallaway
 lane: CRAFT
 type: structure
 topics: [storytelling, structure, hooks]
+
+observed_in:
+  video_id: WDhcMbFFeVU
+  stated_by_creator: false
+
 confidence: high
-stance: null
+evidence_strength: demonstrated
+
+commercial:
+  status: none
+  basis: null
+
 source:
   video_id: WDhcMbFFeVU
   title: "The wild world of Stanley cups"
   duration: "0:59"
-  views_at_capture: "78K"
   timestamps: ["0:22", "0:28", "0:34", "0:51"]
+
+performance:
+  views_at_capture: "78K"
+  tier: mid
+  captured: 2026-09-10
+  interpretation: sampling-context-only
+  confounds:
+    - "Stanley cups were a mainstream trend at capture time."
+
 captured: 2026-09-10
 supersedes: null
 related: [kallaway--system-decomposition--005]

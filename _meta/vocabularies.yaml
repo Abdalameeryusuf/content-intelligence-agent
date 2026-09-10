@@ -1,0 +1,135 @@
+# Controlled vocabularies.
+#
+# Every value listed here is closed. If a case does not fit, DO NOT invent a value —
+# use the fallback, describe the situation in the body, and raise it in
+# `_meta/decisions.md`. Inventing values per insight is how `speaker_role` drifted
+# during the pilot, and it is the same failure `topics.yaml` exists to prevent.
+
+# ---------------------------------------------------------------------------
+# attribution.role — WHO made the claim, relative to the tracked creator
+# ---------------------------------------------------------------------------
+# Applies to CLAIM and CASE. CRAFT/PATTERN describe observed construction rather
+# than assertions, so they use `observed_in` instead (see schemas.md).
+attribution_roles:
+  - value: self
+    means: The tracked creator asserting their own view, in their own content.
+
+  - value: guest
+    means: >
+      Someone appearing on the tracked creator's channel, asserting their own view.
+      The claim belongs to the guest. The tracked creator is the publisher, not the
+      source, and must never inherit the claim.
+
+  - value: host-framed-guest-endorsed
+    means: >
+      The tracked creator proposed the framing and the guest accepted or extended it.
+      Genuinely joint. Both parties are recorded; neither is credited alone.
+      Use only when the transcript shows the host proposing and the guest agreeing —
+      not merely a guest answering a question.
+
+  - value: third-party-reported
+    means: >
+      The tracked creator reports a claim, framework or system belonging to someone
+      not present. The claim belongs to the third party AS REPORTED, and the report
+      itself is unverified unless a primary source is cited in the body.
+
+  - value: unknown
+    means: >
+      Attribution cannot be established from the transcript. Fallback. An insight
+      carrying this may not be used in synthesis until resolved.
+
+# ---------------------------------------------------------------------------
+# commercial.status — the video's PROMOTIONAL CHARACTER
+# ---------------------------------------------------------------------------
+# These describe what is OBSERVABLE in the content. None of them asserts that money
+# changed hands unless the creator said so.
+#
+# Stating that an undisclosed video is "sponsored" is a factual claim about a real
+# person's undisclosed financial relationships. Do not make it. `promotional`
+# describes the content; `disclosed-sponsorship` describes a disclosure. The
+# distinction is not pedantic — it is the difference between an observation and an
+# accusation.
+commercial_statuses:
+  - value: none
+    means: No sustained promotion of a specific commercial product or service.
+
+  - value: promotional
+    means: >
+      The content functions as sustained promotion of one product — the product is
+      the subject, the framing is favourable throughout, and no failure conditions or
+      alternatives are given. This is an OBSERVATION ABOUT THE CONTENT. It asserts
+      nothing about payment, disclosure, or intent.
+    requires: commercial.basis
+
+  - value: disclosed-sponsorship
+    means: The creator states the content is sponsored, paid, or a partnership.
+    requires: commercial.basis   # quote the disclosure
+
+  - value: disclosed-non-sponsorship
+    means: >
+      The creator explicitly states it is NOT sponsored. Recorded because it
+      establishes their disclosure habit, which is context for every other video.
+    requires: commercial.basis   # quote the statement
+
+  - value: unknown
+    means: Not assessed. Fallback.
+
+# ---------------------------------------------------------------------------
+# performance.interpretation — how performance data MAY be read
+# ---------------------------------------------------------------------------
+# Deliberately near-closed. See schemas.md §5 for why.
+performance_interpretations:
+  - value: sampling-context-only
+    means: >
+      The figure records what was sampled and when. It may be cited to describe the
+      sample, or to note that a pattern appears across different performance tiers.
+      It may NEVER be cited as evidence that a technique caused, or contributed to,
+      the result. The default and, absent a controlled comparison, the only legal value.
+
+  - value: controlled-comparison
+    means: >
+      Reserved. Legal only when a PATTERN holds subject matter, creator, format and
+      era approximately constant across instances and varies only the technique.
+      Requires `performance.controls` naming what was held constant. No insight in
+      the knowledge base currently qualifies.
+
+# ---------------------------------------------------------------------------
+# knowledge_types — what kind of file this is
+# ---------------------------------------------------------------------------
+knowledge_types:
+  - value: INSIGHT
+    means: Derived from ONE source video. Lives in `creators/<slug>/insights/`.
+  - value: PATTERN
+    means: >
+      Derived from TWO OR MORE source instances. Lives in `creators/<slug>/patterns/`.
+      A first-class knowledge type, not an insight with extra sources.
+
+# ---------------------------------------------------------------------------
+# lanes and types (unchanged from the pilot, restated here so the vocabulary is
+# in one place)
+# ---------------------------------------------------------------------------
+lanes:
+  - value: CLAIM
+    types: [principle, framework, concept, opinion, prediction, strategy]
+  - value: CRAFT
+    types: [hook, format, structure, technique, pacing]
+  - value: CASE
+    types: [case-study, launch, experiment]
+
+# ---------------------------------------------------------------------------
+# evidence_strength — how well supported a CLAIM is, INDEPENDENT of how clearly
+# it was stated
+# ---------------------------------------------------------------------------
+# `confidence` records how clearly it was said. This records whether it is backed.
+# Keeping them separate is what lets synthesis tell "widely asserted" from "supported".
+evidence_strengths:
+  - value: none
+    means: Asserted with no support offered.
+  - value: anecdote
+    means: One story or example, usually the creator's own, usually selected because it worked.
+  - value: self-reported-data
+    means: Numbers from the creator's own work, unverifiable by us.
+  - value: external-data
+    means: Third-party data or research, cited well enough to check.
+  - value: demonstrated
+    means: Shown on screen, verifiable by watching. Typical of CRAFT.

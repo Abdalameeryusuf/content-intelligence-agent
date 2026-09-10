@@ -1,18 +1,36 @@
 ---
 id: kallaway--comparison-anchor--008
+knowledge_type: INSIGHT
 creator: kallaway
-speaker: kallaway
 lane: CRAFT
 type: technique
 topics: [structure, compression, formats]
+
+observed_in:
+  video_id: s7KgTX6psWU
+  stated_by_creator: true
+
 confidence: high
-stance: null
+evidence_strength: demonstrated
+
+commercial:
+  status: none
+  basis: null
+
 source:
   video_id: s7KgTX6psWU
   title: "I Tested Meta's Orion Holographic AR Glasses"
   duration: "8:39"
-  views_at_capture: "23K"
   timestamps: ["3:56", "4:11", "6:59", "7:05"]
+
+performance:
+  views_at_capture: "23K"
+  tier: mid
+  captured: 2026-09-10
+  interpretation: sampling-context-only
+  confounds:
+    - "Access-driven subject (exclusive product demo); reach reflects the exclusive, not the technique."
+
 captured: 2026-09-10
 supersedes: null
 related: [kallaway--verdict-against-interest--007]

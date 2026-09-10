@@ -1,18 +1,39 @@
 ---
 id: kallaway--audience-product-alignment--003
+knowledge_type: INSIGHT
 creator: kallaway
-speaker: kallaway
 lane: CLAIM
 type: principle
 topics: [audience-building, positioning, niche-selection]
+
+attribution:
+  claimed_by: kallaway
+  role: self
+  published_by: kallaway
+  co_constructed_with: null
+
 confidence: high
+evidence_strength: none
 stance: strong
+
+commercial:
+  status: none
+  basis: null
+
 source:
   video_id: 33RYYHqU0OQ
   title: "I'm building a personal holding company"
   duration: "13:37"
-  views_at_capture: "3.3K"
   timestamps: ["6:22", "6:37", "6:50"]
+
+performance:
+  views_at_capture: "3.3K"
+  tier: low
+  captured: 2026-09-10
+  interpretation: sampling-context-only
+  confounds:
+    - "Older video; view count reflects channel size at the time, not now"
+
 captured: 2026-09-10
 supersedes: null
 related: [kallaway--distribution-before-product--001]

@@ -1,18 +1,39 @@
 ---
 id: kallaway--personal-holdco-plan--case-001
+knowledge_type: INSIGHT
 creator: kallaway
-speaker: kallaway
 lane: CASE
 type: case-study
 topics: [solo-building, distribution, monetization, audience-building]
+
+attribution:
+  claimed_by: kallaway
+  role: self
+  published_by: kallaway
+  co_constructed_with: null
+
 confidence: high
+evidence_strength: self-reported-data
 stance: strong
+
+commercial:
+  status: none
+  basis: null
+
 source:
   video_id: 33RYYHqU0OQ
   title: "I'm building a personal holding company"
   duration: "13:37"
-  views_at_capture: "3.3K"
   timestamps: ["0:00", "1:45", "4:40", "9:15", "10:05", "11:30"]
+
+performance:
+  views_at_capture: "3.3K"
+  tier: low
+  captured: 2026-09-10
+  interpretation: sampling-context-only
+  confounds:
+    - "Older video; view count reflects channel size at the time, not now"
+
 captured: 2026-09-10
 supersedes: null
 related: [kallaway--distribution-before-product--001, kallaway--owned-vs-rented-audience--002]
@@ -55,7 +76,7 @@ products and trends, so the audience is complementary to whatever gets launched 
 **Unknown, and the pilot cannot establish it.** This video sits at index 234 of 323 —
 older material. The sampled catalog shows the channel later moved through culture
 breakdowns into AI/tech content, and the most-viewed recent videos are brand
-partnerships (`kallaway--commercial-content-in-tutorial-form--009`), which is consistent
+partnerships (`kallaway--promotional-framework-format--p002`), which is consistent
 with step 2 having happened.
 
 Whether steps 3–6 occurred — whether any brand was built or acquired — is **not

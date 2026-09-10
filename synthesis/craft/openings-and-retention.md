@@ -18,7 +18,7 @@ general.
 |---|---|---|
 | Implausible-fact cold open | `kallaway--implausible-fact-cold-open--001` | Partly — needs a genuinely strange fact |
 | Escalation that demotes the headline | `kallaway--escalation-demotes-the-headline--002` | **Yes — material already fits** |
-| Mid-roll re-hook | `kallaway--mid-roll-rehook--003` | Weakened form only |
+| Mid-roll re-hook (**PATTERN**, 7 instances) | `kallaway--mid-roll-rehook--p001` | Weakened form only |
 | Near-death reversal | `kallaway--near-death-reversal--004` | **Yes, with honesty constraint** |
 | System decomposition | `kallaway--system-decomposition--005` | Not about Lifepal yet |
 | Artifact teardown | `kallaway--artifact-teardown--006` | **Strongest match in the pilot** |
@@ -72,4 +72,4 @@ manufacture it. That is the scarce condition; the patterns themselves are not sc
 [INFERENCE] The pilot's most useful methodological finding is that deliberately sampling
 low performers changed the conclusions. Selecting on views would have surfaced the
 commercial AI-agent format as the channel's strongest, and recommended imitating a paid
-placement. See `kallaway--commercial-content-in-tutorial-form--009`.
+placement. See `kallaway--promotional-framework-format--p002` (**PATTERN**, 4 instances).

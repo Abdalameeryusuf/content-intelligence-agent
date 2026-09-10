@@ -147,3 +147,110 @@ should require any insight citing performance to state what it attributes it to.
 Whether to fix the schema before backfilling, and whether the backfill is worth its cost
 given yield concentration — 4 of 20 insights came from a single 13-minute video, while
 the two highest-view Shorts produced 2 and 0. Both are for Ameer.
+
+---
+
+## 2026-09-10 — Schema revision 2: the four pilot defects fixed
+
+All four defects from the pilot are closed, and the existing 20 pilot files were
+migrated and validated rather than left on the old schema.
+
+### 1. Attribution is now mandatory and closed
+
+`attribution: {claimed_by, role, published_by, co_constructed_with}` on every CLAIM and
+CASE. `role` draws from a **closed vocabulary** in the new `_meta/vocabularies.yaml`:
+`self` | `guest` | `host-framed-guest-endorsed` | `third-party-reported` | `unknown`.
+
+`host-framed-guest-endorsed` was added because the pilot found a case neither "his" nor
+"the guest's": Kallaway proposed the taste-moat framing and Ek accepted and extended it.
+Crediting either alone would misreport what happened.
+
+`unknown` is the fallback, and an insight carrying it **may not be used in synthesis**
+until resolved. That is what makes the vocabulary closed in practice — there is a legal
+move when nothing fits, so there is no reason to invent a value.
+
+### 2. Commercial is mandatory, and describes content rather than payment
+
+`commercial: {status, basis}` on every insight including `status: none`, because an
+absent field is indistinguishable from an unassessed one.
+
+**A correction to the pilot's own finding.** The pilot recorded these videos as
+"sponsored placements." That was an overstatement and is retracted. None of the three
+carries a disclosure, and asserting payment without evidence is a factual claim about a
+real person's undisclosed financial relationships.
+
+The vocabulary now separates the observation from the accusation:
+`promotional` (observable: one product is the sustained subject, framed favourably, no
+failure conditions, no alternatives) versus `disclosed-sponsorship` (a disclosure exists
+and is quoted). `basis` is required for every status except `none`.
+
+### 3. PATTERN is a first-class knowledge type
+
+New directory `creators/<slug>/patterns/`, new `knowledge_type` field, and a promotion
+rule in `references/extraction.md` §6: a construction seen in a second video becomes a
+PATTERN rather than an insight with an appended timestamp.
+
+Patterns require `instances` (structured, with per-instance tier and commercial status),
+`span`, `sample_basis`, `generalization`, and a mandatory `## Limits of this
+observation` section.
+
+`generalization: within-creator` is the default and stays until a second creator shows
+the pattern independently. The two pilot cross-video findings were migrated:
+`mid-roll-rehook--p001` (7 instances, 5 videos) and `promotional-framework-format--p002`
+(4 instances). Their single-video predecessors are retired via `supersedes`.
+
+### 4. Performance is structurally prevented from carrying causal weight
+
+`performance` now requires `interpretation`, whose vocabulary has effectively one legal
+value: `sampling-context-only`. The alternative, `controlled-comparison`, requires
+`performance.controls` naming what was held constant — **nothing in the knowledge base
+qualifies, and nothing is expected to.**
+
+`confounds` is required where a figure is unusual, so the competing explanation travels
+with the number. Patterns reason with `performance_tier` relative to the creator's own
+catalog rather than raw counts.
+
+The standing rule, in SKILL.md §6a: performance may describe the sample or show a
+pattern spans tiers. It may never be cited as evidence that a technique caused a result.
+
+### Also added: `evidence_strength`, a second axis
+
+`confidence` records how *clearly* something was said; `evidence_strength` records
+whether it is *backed* (`none` | `anecdote` | `self-reported-data` | `external-data` |
+`demonstrated`). The pilot repeatedly hit forcefully-asserted, unsupported claims and
+had no way to record both facts at once. Six of eight CLAIM insights are now
+`confidence: high` + `evidence_strength: none`, which is a finding in itself.
+
+### Defect found during validation: the fence rule was wrong for CRAFT
+
+The pilot's rule — everything above `## Agent notes` is sourced — is false for CRAFT and
+PATTERN files. Naming a pattern, explaining why it works and stating where it fails are
+all *agent analysis of an observed construction*. Treating those as sourced would credit
+the creator with reasoning they never did.
+
+The fence is now lane-aware, with source-only sections declared per lane
+(`schemas.md` §1). The practical consequence is worth stating plainly: **a CRAFT insight
+is mostly the agent's reading of what a creator did**, and no file may imply otherwise
+unless `observed_in.stated_by_creator` is `true`.
+
+### Validation
+
+A validator was written in the session scratchpad — **not committed**, per the
+repository's no-scripts rule. It checks closed vocabularies against
+`_meta/vocabularies.yaml` itself (so it cannot drift from the source of truth), required
+fields per lane and knowledge type, the lane-aware fence, inline timestamps in
+quote-bearing sections, pattern minimums, ledger reconciliation, and dangling ID
+references. It also greps for performance data used causally.
+
+First run: 10 failures. Three were a validator bug (topic regex broke on trailing
+comments), six were the CRAFT fence defect above, and one was a real missing field.
+After fixes: **20 files pass, 0 errors** — 18 insights, 2 patterns.
+
+Three genuine gaps it caught in the pilot's own work: two interview insights quoted
+claims with no inline timestamps (the long transcripts were fetched without timestamp
+markers — now flagged in-file as approximate), and one pattern's instance table had no
+timestamps at all.
+
+### Not done, deliberately
+
+The remaining 303 Kallaway videos and the other three creators are untouched.

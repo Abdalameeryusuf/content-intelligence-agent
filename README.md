@@ -11,24 +11,31 @@ Everything here is meant to be read by a human as easily as by a model.
 | Path | Holds | Written by |
 |---|---|---|
 | `.claude/skills/content-intelligence/` | How the agent reasons. **No creator knowledge.** | Human + agent |
-| `creators/` | Per-creator profiles and atomic insight files | Agent |
+| `creators/<slug>/insights/` | Single-video insights | Agent |
+| `creators/<slug>/patterns/` | **Cross-video patterns** (2+ instances) | Agent |
 | `synthesis/` | Cross-creator analysis derived from `creators/` | Agent |
 | `research/` | Dated web findings, append-only | Agent |
 | `me/` | Goals, positioning, audience | **Human** |
 | `project/` | Lifepal context, as dated snapshots | Human + agent |
 | `content/` | Published history, idea backlog, strategy | Both |
-| `_meta/` | Ledger, topic vocabulary, decision log | Agent |
+| `_meta/` | Ledger, topic + controlled vocabularies, decision log | Agent |
 
 ## The load-bearing rules
 
-1. **Insights are atomic.** One idea per file, not one file per video.
+1. **Insights are atomic.** One idea per file, not one file per video. Anything resting
+   on two or more videos is a **PATTERN**, a separate knowledge type in `patterns/`.
 2. **Nothing is overwritten.** A changed view *supersedes* an old one; both survive.
 3. **Creator statements and agent inference are structurally separated**, not just
-   stylistically. Everything above `## Agent notes` is sourced. Everything below is not.
+   stylistically — via lane-aware source-only sections. Note that a CRAFT file is
+   *mostly* agent analysis: the creator supplied the construction, not the reading of it.
 4. **Transcripts are never committed.** Insight files carry video IDs and timestamps,
    which is enough to return to the source.
 5. **`_meta/ledger.json` is machine-owned.** Do not hand-edit it.
 6. **No creator knowledge in the Skill.** Delete `creators/` and the Skill is still valid.
+7. **Six epistemic categories, never blurred**: `[SOURCE]`, `[CLAIM]`, `[PATTERN]`,
+   `[INFERENCE]`, `[RECOMMENDATION]`, `[PERFORMANCE]`.
+8. **Performance data never proves a technique worked.** It describes the sample only.
+9. **Controlled values come from `_meta/vocabularies.yaml`.** Never invented per file.
 
 ## Entry points
 

@@ -1,18 +1,36 @@
 ---
 id: kallaway--anti-preamble-tutorial-open--010
+knowledge_type: INSIGHT
 creator: kallaway
-speaker: kallaway
 lane: CRAFT
 type: technique
 topics: [hooks, pacing, formats]
+
+observed_in:
+  video_id: xyEQuqv1TLw
+  stated_by_creator: true
+
 confidence: high
-stance: null
+evidence_strength: demonstrated
+
+commercial:
+  status: none
+  basis: null
+
 source:
   video_id: xyEQuqv1TLw
   title: "Build your own AI chatbot in 2 minutes without code"
   duration: "8:05"
-  views_at_capture: "131K"
   timestamps: ["0:00", "0:17", "0:26"]
+
+performance:
+  views_at_capture: "131K"
+  tier: high
+  captured: 2026-09-10
+  interpretation: sampling-context-only
+  confounds:
+    - "High tier, but a search-driven tutorial topic; discovery differs from the algorithmic Shorts feed."
+
 captured: 2026-09-10
 supersedes: null
 related: [kallaway--implausible-fact-cold-open--001]
