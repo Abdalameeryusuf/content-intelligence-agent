@@ -89,3 +89,61 @@ twice.
 formats, and a view range from 3K to 8.6M — including deliberate *low* performers, so
 the craft library can contrast what worked against what didn't from the same creator.
 Selecting only the best videos would have made that comparison impossible.
+
+---
+
+## 2026-09-10 — Pilot executed: 20 Kallaway videos, 16 insights
+
+**Result:** the three-lane schema survived contact with real transcripts. Four defects
+were found, none fatal, all cheap to fix now and expensive to fix at 323 files.
+
+### Defect 1 — no `speaker` field (severity: high)
+
+Two of twenty videos are interviews. Claims by Daniel Ek and Mark Zuckerberg would have
+been attributed to Kallaway, which violates SKILL.md §2 directly. A third case appeared
+where Kallaway *reports* a third party's framework (Virgil Abloh's 3% rule) — neither his
+claim nor a guest's.
+
+`speaker` and `speaker_role` were added ad hoc during the pilot. **`speaker_role` needs a
+controlled vocabulary** (`self` | `guest` | `reporting-third-party`) rather than values
+invented per insight, or it will drift the way `topics` would without `topics.yaml`.
+
+### Defect 2 — no `commercial` flag (severity: high)
+
+Four of twenty videos are commercial content. The two highest-view videos in the recent
+catalog are both Microsoft Copilot Studio placements. Without a flag, a later synthesis
+pass reads paid recommendations as sincere technique advice — and would have recommended
+imitating a sponsored format. Added to the ledger during the pilot; belongs in insight
+frontmatter too.
+
+### Defect 3 — schema assumes one video per insight (severity: medium)
+
+The strongest CRAFT insight (`mid-roll-rehook--003`) is built from seven instances across
+five videos, and the commercial-content insight from four. The `source` block holds one
+`video_id`, so both required an ad-hoc list in `timestamps`. Cross-video patterns are not
+an edge case — they are where the best craft insights come from, because a pattern is
+only visible across instances.
+
+### Defect 4 — `views_at_capture` invites a false inference (severity: medium)
+
+Recording performance was correct, but the pilot showed view counts in this catalog track
+*subject matter*, not technique: 3K to 8.6M for the same creator and format. The schema
+should require any insight citing performance to state what it attributes it to.
+
+### What worked
+
+- **Three lanes were the right call.** CLAIM would have produced near-empty files for
+  most Shorts; CRAFT captured what was actually there.
+- **Atomic insights paid off immediately.** One 60-second video produced both a CRAFT and
+  a CASE insight, consumed by different downstream readers.
+- **Zero-insight videos are useful.** Six of twenty produced no standalone insight; four
+  still contributed evidence to cross-video patterns.
+- **Deliberate low-performer sampling changed the conclusions.** The most transferable
+  craft insight came from a 29K-view video and the most important strategic one from a
+  3.3K-view video. Selecting on views would have inverted the findings.
+
+### Not decided here
+
+Whether to fix the schema before backfilling, and whether the backfill is worth its cost
+given yield concentration — 4 of 16 insights came from a single 13-minute video, while
+the two highest-view Shorts produced 2 and 0. Both are for Ameer.
