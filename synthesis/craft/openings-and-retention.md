@@ -1,7 +1,7 @@
 ---
 pattern_group: openings-and-retention
 updated: 2026-09-10
-insight_count: 6
+insight_count: 9
 creators: [kallaway]
 status: single-creator — not yet cross-validated
 ---

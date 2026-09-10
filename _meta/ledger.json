@@ -9,32 +9,177 @@
       "videos_attempted": 21,
       "videos_processed": 20,
       "videos_unavailable": 1,
-      "insights_created": 16,
+      "insights_created": 20,
       "credits_spent_estimate": 25,
-      "note": "Schema-validation pilot. Selection spread across 4 catalog eras, 7 long-form formats, and a 3K-8.6M view range, deliberately including low performers. Catalog enumeration cost ~4 credits, transcripts ~21."
+      "note": "Schema-validation pilot. Selection spread across 4 catalog eras, 7 long-form formats, and a 3K-8.6M view range, deliberately including low performers. Catalog enumeration cost ~4 credits, transcripts ~21.",
+      "insights_breakdown": {
+        "attributed_to_single_video": 19,
+        "cross_video": 1
+      }
     }
   ],
   "processed_videos": {
-    "R1bn__sNAaM": { "creator": "kallaway", "date": "2026-09-10", "insights": 2, "lanes": ["CRAFT"] },
-    "0uZ6GSHKW44": { "creator": "kallaway", "date": "2026-09-10", "insights": 0, "lanes": [], "note": "Contributed a timestamp to mid-roll-rehook--003; no standalone insight" },
-    "cvR3mWP-4z0": { "creator": "kallaway", "date": "2026-09-10", "insights": 0, "lanes": [], "note": "Contributed a timestamp to mid-roll-rehook--003" },
-    "zFcsXAEfKTE": { "creator": "kallaway", "date": "2026-09-10", "insights": 1, "lanes": ["CRAFT"], "commercial": true },
-    "emdx7im23ao": { "creator": "kallaway", "date": "2026-09-10", "insights": 0, "lanes": [], "commercial": true, "note": "Folded into commercial-content-in-tutorial-form--009" },
-    "3Lv9YMOAyEY": { "creator": "kallaway", "date": "2026-09-10", "insights": 1, "lanes": ["CLAIM"] },
-    "7W5Mpwt8kKY": { "creator": "kallaway", "date": "2026-09-10", "insights": 0, "lanes": [], "note": "Product-demo commentary; no durable insight" },
-    "WDhcMbFFeVU": { "creator": "kallaway", "date": "2026-09-10", "insights": 1, "lanes": ["CRAFT"] },
-    "rjo5XUtVQSE": { "creator": "kallaway", "date": "2026-09-10", "insights": 1, "lanes": ["CRAFT"] },
-    "GacM6G1owfA": { "creator": "kallaway", "date": "2026-09-10", "insights": 1, "lanes": ["CLAIM"] },
-    "o_Jq2DKL_W8": { "creator": "kallaway", "date": "2026-09-10", "insights": 2, "lanes": ["CRAFT", "CASE"] },
-    "FrkRFGLVmSc": { "creator": "kallaway", "date": "2026-09-10", "insights": 0, "lanes": [], "note": "Tool recommendation; contributed disclosure evidence to commercial-content-in-tutorial-form--009" },
-    "o4AUMhBoWgc": { "creator": "kallaway", "date": "2026-09-10", "insights": 0, "lanes": [], "note": "Contributed a timestamp to mid-roll-rehook--003" },
-    "xyEQuqv1TLw": { "creator": "kallaway", "date": "2026-09-10", "insights": 1, "lanes": ["CRAFT"] },
-    "s7KgTX6psWU": { "creator": "kallaway", "date": "2026-09-10", "insights": 1, "lanes": ["CRAFT"] },
-    "33RYYHqU0OQ": { "creator": "kallaway", "date": "2026-09-10", "insights": 4, "lanes": ["CLAIM", "CASE"], "note": "Densest video in the pilot" },
-    "6dHBs08vdrg": { "creator": "kallaway", "date": "2026-09-10", "insights": 1, "lanes": ["CRAFT"] },
-    "1NOFMGsxBdc": { "creator": "kallaway", "date": "2026-09-10", "insights": 0, "lanes": [], "commercial": true, "note": "Folded into commercial-content-in-tutorial-form--009" },
-    "Tw64JwEViic": { "creator": "kallaway", "date": "2026-09-10", "insights": 1, "lanes": ["CLAIM"], "has_guest": true },
-    "m88OV10vRLA": { "creator": "kallaway", "date": "2026-09-10", "insights": 1, "lanes": ["CLAIM"], "has_guest": true }
+    "R1bn__sNAaM": {
+      "creator": "kallaway",
+      "date": "2026-09-10",
+      "insights": 2,
+      "lanes": [
+        "CRAFT"
+      ]
+    },
+    "0uZ6GSHKW44": {
+      "creator": "kallaway",
+      "date": "2026-09-10",
+      "insights": 0,
+      "lanes": [],
+      "note": "Contributed a timestamp to mid-roll-rehook--003; no standalone insight"
+    },
+    "cvR3mWP-4z0": {
+      "creator": "kallaway",
+      "date": "2026-09-10",
+      "insights": 0,
+      "lanes": [],
+      "note": "Contributed a timestamp to mid-roll-rehook--003"
+    },
+    "zFcsXAEfKTE": {
+      "creator": "kallaway",
+      "date": "2026-09-10",
+      "insights": 1,
+      "lanes": [
+        "CRAFT"
+      ],
+      "commercial": true
+    },
+    "emdx7im23ao": {
+      "creator": "kallaway",
+      "date": "2026-09-10",
+      "insights": 0,
+      "lanes": [],
+      "commercial": true,
+      "note": "Folded into commercial-content-in-tutorial-form--009"
+    },
+    "3Lv9YMOAyEY": {
+      "creator": "kallaway",
+      "date": "2026-09-10",
+      "insights": 1,
+      "lanes": [
+        "CLAIM"
+      ]
+    },
+    "7W5Mpwt8kKY": {
+      "creator": "kallaway",
+      "date": "2026-09-10",
+      "insights": 0,
+      "lanes": [],
+      "note": "Product-demo commentary; no durable insight"
+    },
+    "WDhcMbFFeVU": {
+      "creator": "kallaway",
+      "date": "2026-09-10",
+      "insights": 1,
+      "lanes": [
+        "CRAFT"
+      ]
+    },
+    "rjo5XUtVQSE": {
+      "creator": "kallaway",
+      "date": "2026-09-10",
+      "insights": 1,
+      "lanes": [
+        "CRAFT"
+      ]
+    },
+    "GacM6G1owfA": {
+      "creator": "kallaway",
+      "date": "2026-09-10",
+      "insights": 1,
+      "lanes": [
+        "CLAIM"
+      ]
+    },
+    "o_Jq2DKL_W8": {
+      "creator": "kallaway",
+      "date": "2026-09-10",
+      "insights": 2,
+      "lanes": [
+        "CRAFT",
+        "CASE"
+      ]
+    },
+    "FrkRFGLVmSc": {
+      "creator": "kallaway",
+      "date": "2026-09-10",
+      "insights": 0,
+      "lanes": [],
+      "note": "Tool recommendation; contributed disclosure evidence to commercial-content-in-tutorial-form--009"
+    },
+    "o4AUMhBoWgc": {
+      "creator": "kallaway",
+      "date": "2026-09-10",
+      "insights": 0,
+      "lanes": [],
+      "note": "Contributed a timestamp to mid-roll-rehook--003"
+    },
+    "xyEQuqv1TLw": {
+      "creator": "kallaway",
+      "date": "2026-09-10",
+      "insights": 1,
+      "lanes": [
+        "CRAFT"
+      ]
+    },
+    "s7KgTX6psWU": {
+      "creator": "kallaway",
+      "date": "2026-09-10",
+      "insights": 1,
+      "lanes": [
+        "CRAFT"
+      ]
+    },
+    "33RYYHqU0OQ": {
+      "creator": "kallaway",
+      "date": "2026-09-10",
+      "insights": 5,
+      "lanes": [
+        "CLAIM",
+        "CASE"
+      ],
+      "note": "Densest video in the pilot"
+    },
+    "6dHBs08vdrg": {
+      "creator": "kallaway",
+      "date": "2026-09-10",
+      "insights": 1,
+      "lanes": [
+        "CRAFT"
+      ]
+    },
+    "1NOFMGsxBdc": {
+      "creator": "kallaway",
+      "date": "2026-09-10",
+      "insights": 0,
+      "lanes": [],
+      "commercial": true,
+      "note": "Folded into commercial-content-in-tutorial-form--009"
+    },
+    "Tw64JwEViic": {
+      "creator": "kallaway",
+      "date": "2026-09-10",
+      "insights": 1,
+      "lanes": [
+        "CLAIM"
+      ],
+      "has_guest": true
+    },
+    "m88OV10vRLA": {
+      "creator": "kallaway",
+      "date": "2026-09-10",
+      "insights": 1,
+      "lanes": [
+        "CLAIM"
+      ],
+      "has_guest": true
+    }
   },
   "unavailable_videos": {
     "k-ehK9uh1Sc": {
@@ -43,6 +188,23 @@
       "reason": "404 - no transcript available",
       "title": "The secrets behind Taylor Swift's insane Era's Tour stage",
       "note": "Do not retry. Replaced in the pilot sample by cvR3mWP-4z0 (same era, same tier, different subject)."
+    }
+  },
+  "cross_video_insights": {
+    "kallaway--mid-roll-rehook--003": {
+      "creator": "kallaway",
+      "date": "2026-09-10",
+      "lanes": [
+        "CRAFT"
+      ],
+      "derived_from": [
+        "R1bn__sNAaM",
+        "0uZ6GSHKW44",
+        "cvR3mWP-4z0",
+        "WDhcMbFFeVU",
+        "o4AUMhBoWgc"
+      ],
+      "note": "Not attributable to a single video. See decisions.md defect 3."
     }
   }
 }

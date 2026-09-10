@@ -2,7 +2,7 @@
 
 Human-readable mirror of `_meta/ledger.json`. The ledger is authoritative.
 
-**Catalog: 323 videos. Processed: 20 (6%).** Pilot only — the remainder is deliberately
+**Catalog: 323 videos. Processed: 20 (6%). Insights: 20.** Pilot only — the remainder is deliberately
 unprocessed pending schema review.
 
 ## Long-form (7 of the 8 that exist in the catalog)

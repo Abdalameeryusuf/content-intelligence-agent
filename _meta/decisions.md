@@ -92,7 +92,7 @@ Selecting only the best videos would have made that comparison impossible.
 
 ---
 
-## 2026-09-10 — Pilot executed: 20 Kallaway videos, 16 insights
+## 2026-09-10 — Pilot executed: 20 Kallaway videos, 20 insights
 
 **Result:** the three-lane schema survived contact with real transcripts. Four defects
 were found, none fatal, all cheap to fix now and expensive to fix at 323 files.
@@ -145,5 +145,5 @@ should require any insight citing performance to state what it attributes it to.
 ### Not decided here
 
 Whether to fix the schema before backfilling, and whether the backfill is worth its cost
-given yield concentration — 4 of 16 insights came from a single 13-minute video, while
+given yield concentration — 4 of 20 insights came from a single 13-minute video, while
 the two highest-view Shorts produced 2 and 0. Both are for Ameer.
