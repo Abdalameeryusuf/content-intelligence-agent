@@ -1,0 +1,56 @@
+# Tracked creators. Single source of truth for who gets processed.
+# `primary_lane` decides how their material is extracted — see SKILL.md §6.
+
+creators:
+  - slug: kallaway
+    name: Kallaway
+    handle: "@kallaway"
+    channel_id: UCnl8_0CEX3mRPMeg4_xEF9w
+    primary_lane: CRAFT
+    secondary_lanes: [CLAIM, CASE]
+    catalog_size: 323
+    catalog_shape: "~97% Shorts (<=60s); 8 long-form videos in the entire catalog"
+    why_tracked: >
+      Exceptional at hooks, pacing and compression. The value is in HOW he makes
+      things, not primarily in stated content-strategy doctrine — see profile.md,
+      which records a correction to the original premise.
+    status: pilot
+
+  - slug: chris-raroque
+    name: Chris Raroque
+    handle: "@ChrisRaroque"
+    channel_id: null          # resolve at first run
+    primary_lane: CASE
+    secondary_lanes: [CRAFT]
+    catalog_size: null
+    catalog_shape: null
+    why_tracked: >
+      Builds and launches real apps and narrates the process. The closest analogue to
+      what Ameer is doing with Lifepal, so his case studies transfer most directly.
+    status: not-started
+
+  - slug: ali-abdaal
+    name: Ali Abdaal
+    handle: "@aliabdaal"
+    channel_id: null
+    primary_lane: CLAIM
+    secondary_lanes: [CRAFT]
+    catalog_size: null
+    catalog_shape: null
+    why_tracked: >
+      Content strategy, motivation and productivity, aimed at an audience that
+      overlaps heavily with Lifepal's target. Useful for both doctrine and craft.
+    status: not-started
+
+  - slug: alex-hormozi
+    name: Alex Hormozi
+    handle: "@AlexHormozi"
+    channel_id: null
+    primary_lane: CLAIM
+    secondary_lanes: [CASE]
+    catalog_size: null
+    catalog_shape: null
+    why_tracked: >
+      Business and offer construction; selling to entrepreneurs and operators.
+      Strongest source for how value is framed and how offers are built.
+    status: not-started

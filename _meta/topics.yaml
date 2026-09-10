@@ -1,0 +1,49 @@
+# Controlled topic vocabulary.
+#
+# Every insight's `topics:` must appear here. Without this, one insight gets tagged
+# `audience-building` and the next `building-an-audience`, and cross-creator
+# synthesis silently stops working. Add new topics deliberately, in the same commit
+# as the insight that needs them — never coin one inline.
+
+topics:
+  # Craft
+  - hooks
+  - retention
+  - pacing
+  - structure
+  - formats
+  - storytelling
+  - compression          # saying more in less time
+  - titles-and-framing
+
+  # Audience and distribution
+  - audience-building
+  - trust
+  - positioning
+  - niche-selection
+  - platform-dynamics
+  - distribution
+
+  # Business
+  - offers
+  - pricing
+  - monetization
+  - sales
+  - value-creation
+
+  # Building and launching
+  - building-in-public
+  - product-launch
+  - solo-building
+  - ai-products
+  - developer-tools
+
+  # Personal
+  - motivation
+  - consistency
+  - creative-process
+  - decision-making
+
+  # Meta
+  - creator-economy
+  - ai-tooling
